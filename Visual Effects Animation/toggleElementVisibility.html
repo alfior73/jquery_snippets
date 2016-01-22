@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Toggling Visibility</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+<!-- Include jQuery library -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        
+<!-- script that handles functionality of element visibility -->
+        <script>
+// when the document is loaded and ready 
+            $(document).ready(function(){
+// when the button is clicked 
+                $("#button").click(function(){
+// toggle the h2 element 
+                    $("h2").toggle();
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Toggling Visibility</h1>
+<!-- h2 elements that will show and hide -->
+        <h2>Now you see me.</h2>
+        <h2 style="display:none">Now you don't.</h2>
+<!-- Button that will fall the click function in script tag in head section -->
+        <input type="button" value="Toggle the text" id="button">
+    </body>
+</html>
